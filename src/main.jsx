@@ -1,13 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App";
 
-function App() {
-  return (
-    <div style={{ fontFamily: "sans-serif", padding: 40 }}>
-      <h1>Corazón Latino</h1>
-      <p>Tienda funcionando ✔️</p>
-    </div>
-  );
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
