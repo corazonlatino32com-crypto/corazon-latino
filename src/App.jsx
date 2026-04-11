@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 const products = [
@@ -37,19 +36,16 @@ export default function App() {
   return (
     <div style={{ fontFamily: "Arial", background: "#faf7f2", minHeight: "100vh" }}>
 
-      {/* HEADER */}
       <header style={{ display: "flex", justifyContent: "space-between", padding: 20, borderBottom: "1px solid #ddd" }}>
         <h1>Corazón Latino</h1>
         <div>🛒 {cart.length} | €{total}</div>
       </header>
 
-      {/* HERO */}
       <section style={{ textAlign: "center", padding: 60 }}>
         <h2 style={{ fontSize: 40 }}>Luxury Latin Identity</h2>
         <p>Minimal fashion inspired by roots & culture</p>
       </section>
 
-      {/* PRODUCTS */}
       <section style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, padding: 40 }}>
         {products.map((p) => (
           <div key={p.id} style={{ background: "white", padding: 15, borderRadius: 12 }}>
