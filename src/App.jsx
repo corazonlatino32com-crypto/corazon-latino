@@ -160,7 +160,7 @@ export default function App() {
         ))}
       </section>
 
-      {/* CART */}
+      {/* CART + STRIPE */}
       {cart.length > 0 && (
         <div style={{
           position: "fixed",
@@ -181,6 +181,24 @@ export default function App() {
           ))}
 
           <strong>Total: €{total}</strong>
+
+          {/* BOTÓN DE PAGO */}
+          <a
+            href="https://buy.stripe.com/test_5kQ8wIf6l9V80CV9sh9EI00"
+            target="_blank"
+            style={{
+              display: "block",
+              marginTop: 10,
+              padding: 12,
+              background: "black",
+              color: "white",
+              textAlign: "center",
+              borderRadius: 8,
+              textDecoration: "none"
+            }}
+          >
+            Pagar ahora
+          </a>
         </div>
       )}
 
